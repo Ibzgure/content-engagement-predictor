@@ -1,0 +1,47 @@
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+streamlit>=1.28.0
+```
+
+---
+
+### **Step 6: Create .gitignore**
+
+Create a file called `.gitignore` with:
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Data files
+*.csv
+*.json
+data/raw/*
+!data/raw/.gitkeep
+
+# Models
+models/*.pkl
+models/*.h5
+*.model
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
